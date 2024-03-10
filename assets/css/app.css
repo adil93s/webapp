@@ -1,0 +1,54 @@
+@import "./fonts";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+    h1 {
+        @apply text-primary dark:text-light font-bold font-inter text-xl md:text-2xl lg:text-2xl lg:leading-16;
+    }
+
+    h2 {
+        @apply text-primary dark:text-light font-semibold font-inter text-lg md:text-xl lg:text-xl;
+    }
+
+    h3 {
+        @apply text-primary dark:text-light font-semibold font-inter text-base md:text-lg lg:text-lg;
+    }
+
+    p {
+        @apply text-primary dark:text-light font-normal font-inter text-xs xs:text-sm md:text-base leading-5 lg:leading-6;
+    }
+
+    .btn-primary {
+        @apply bg-primary rounded-md text-white text-base leading-none font-bold font-inter transition duration-300 hover:-translate-y-1;
+    }
+
+    .btn-secondary {
+        @apply bg-secondary rounded-md text-white text-base leading-none font-bold font-inter transition duration-300 hover:-translate-y-1;
+    }
+
+    .btn-grey {
+        @apply bg-grey rounded-md text-black dark:text-white text-base leading-none font-bold font-inter transition duration-300 hover:-translate-y-1;
+    }
+
+    .btn-danger {
+        @apply bg-danger rounded-md text-white text-base leading-none font-bold font-inter transition duration-300 hover:bg-danger-dark hover:-translate-y-1;
+    }
+
+    .btn-primary-inverse {
+        @apply bg-white rounded-md text-primary text-base leading-none font-bold font-inter transition duration-300 hover:bg-light hover:-translate-y-1;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
